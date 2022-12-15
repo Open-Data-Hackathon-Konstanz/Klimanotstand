@@ -1,0 +1,25 @@
+---
+title: "climate_data_constance"
+author: "Marco Lax"
+date: "15/12/2022"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Where to get the data
+
+- [Open Data Website der Stadt Konstanz](https://offenedaten-konstanz.de/search)
+
+Interessante Datensätze sind im [GitHub Repository](https://github.com/Open-Data-Hackathon-Konstanz/Klimanotstand) vorhanden. Gerne könnt ihr aber auch nochmal die oben genannte Website der Stadt durchforsten.
+
+
+## Load data
+```{r cars, echo = TRUE}
+pacman::p_load(tidyverse)
+```
+
+
+
