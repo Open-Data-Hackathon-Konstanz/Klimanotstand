@@ -1,0 +1,19 @@
+---
+title: "Klimanotstand Konstanz"
+author: "Marco Lax"
+date: "16/12/2022"
+output: html_document
+---
+
+# Preperation Open Data Hackathon Konstanz - 16.12.2022
+
+```{r}
+source("r_klimanotstand/load_packages.R")
+```
+
+## Let´s put in some data
+
+```{r}
+data <- read.csv()
+```
+
