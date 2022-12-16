@@ -1,19 +1,46 @@
 ---
-title: "Klimanotstand Konstanz"
+title: "Untitled"
 author: "Marco Lax"
 date: "16/12/2022"
 output: html_document
 ---
 
-# Preperation Open Data Hackathon Konstanz - 16.12.2022
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Load Data and packages
 
 ```{r}
 source("r_klimanotstand/load_packages.R")
 ```
-
-## Let´s put in some data
-
 ```{r}
-data <- read.csv()
+fahrplaene_2019 <- read.csv("data/Busverkehr/2019_FAHRPLAENE.csv", sep=";")
+fahrplaene_2020 <- read.csv("data/Busverkehr/2020_FAHRPLAENE.csv", sep=";")
+
+fahrten_2019 <- read.csv("data/Busverkehr/2019_FAHRTEN.csv", sep=";")
+fahrten_2020 <- read.csv("data/Busverkehr/2020_FAHRTEN.csv", sep=";")
+
+fahrhaltezeiten_2019 <- read.csv("data/Busverkehr/2019_FAHRTHALTEZEITEN.csv", sep=";")
+fahrhaltezeiten_2020 <- read.csv("data/Busverkehr/2020_FAHRTHALTEZEITEN.csv", sep=";")
+
+fahrwege_2019 <- read.csv("data/Busverkehr/2019_FAHRWEGE.csv", sep=";")
+fahrwege_2020 <- read.csv("data/Busverkehr/2020_FAHRWEGE.csv", sep=";")
+
+fahrzeiten_2019 <- read.csv("data/Busverkehr/2019_FAHRZEITEN.csv", sep=";")
+fahrzeiten_2020 <- read.csv("data/Busverkehr/2020_FAHRZEITEN.csv", sep=";")
+
+firmenkalender_2019 <- read.csv("data/Busverkehr/2019_FIRMENKALENDER.csv", sep=";")
+firmenkalender_2020 <- read.csv("data/Busverkehr/2020_FIRMENKALENDER.csv", sep=";")
+
+linien_2019 <- read.csv("data/Busverkehr/2019_FIRMENKALENDER.csv", sep=";")
+linien_2020 <- read.csv("data/Busverkehr/2020_FIRMENKALENDER.csv", sep=";")
+
+orte_2019 <- read.csv("data/Busverkehr/2019_ORTE.csv", sep=";")
+orte_2020 <- read.csv("data/Busverkehr/2019_ORTE.csv", sep=";")
+
+verbindungen_2019 <- read.csv("data/Busverkehr/2019_VERBINDUNGEN.csv", sep=";")
+verbindungen_2020 <- read.csv("data/Busverkehr/2020_VERBINDUNGEN.csv", sep=";")
+
 ```
 
