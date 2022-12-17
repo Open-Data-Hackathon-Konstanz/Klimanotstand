@@ -52,3 +52,37 @@ verbindungen_2020 <- read.csv("../data/Busverkehr/2020_VERBINDUNGEN.csv", sep=";
 fahrten_ <- fahrten_2019 %>% select()
 ```
 
+# Heatmap Solarpotential
+
+```{r}
+solarpotenzial_2018 <- read.csv("../data/Solarpotenzial_2018.csv")
+
+# load packages
+pacman::p_load(leaflet, leaflet.extras, leaflet.extras2, mapview, tidyverse, webshot, rgdal,
+               data.table,htmltools, htmlwidgets, readr, tidyr, install = T, update = F)
+
+```
+
+```{r}
+solarpotenzial_2018 <- solarpotenzial_2018 %>% select(strasse, hausnummer, zusatz, ort,
+                                                      ortsteil, roof_class, solflaeche,
+                                                      pvleistung, ertr_leist, pvco2, solanlage,
+                                                      Shape__Area, Shape_Leng, Shape__Length)
+
+
+map_basic <- leaflet() %>% 
+  addProviderTiles(provider = "CartoDB.Voyager") %>% 
+  enableTileCaching() %>% 
+  setView(lat = 47.67304974982142, lng = 9.183714827775331, zoom = 14) 
+
+
+```
+
+
+
+
+
+
+
+
+
